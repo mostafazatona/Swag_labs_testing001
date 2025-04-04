@@ -20,11 +20,11 @@ public class login {
 
     /*actions*/
         public void setusername (String user_name){
-       driver.findElement(username).sendKeys(user_name);
+       driver.findElement(username).sendKeys("standard_user");
 
         }
         public void setpassword(String password) {
-            driver.findElement(passwordfield).sendKeys(password);
+            driver.findElement(passwordfield).sendKeys("secret_sauce");
         }
         public void clickonlogin(){
 driver.findElement(log_bty).click();

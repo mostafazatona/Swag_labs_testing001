@@ -9,7 +9,24 @@ public class Overview {
     }
         By finish_button = By.id("finish");
         By cansel_button = By.id("cancel");
-        By chart_icon = By.className("shopping_cart_link");
+
+
+    public void Clicking_cansel_button (By cansel) {
+        driver.findElement(cansel_button).click();
+
+    }
+    public void Clicking_finish_button (By finish) {
+        driver.findElement(finish_button).click();
+
+    }
+
+
+
+
+
+
+}
+/* By chart_icon = By.className("shopping_cart_link");
         By Burger_menu = By.id("react-burger-menu-btn");
         By All_items =By.id("inventory_sidebar_link");
         By About = By.id("about_sidebar_link");
@@ -18,8 +35,7 @@ public class Overview {
         By Linkedin_icon = By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[3]/a");
         By Facbook_icon = By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[2]/a");
         By X_icon =By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[1]/a");
-
-    public void Clicking_About (By about) {
+           public void Clicking_About (By about) {
         driver.findElement(About).click();
 
     }
@@ -35,15 +51,7 @@ public class Overview {
         driver.findElement(chart_icon).click();
 
     }
-    public void Clicking_cansel_button (By cansel) {
-        driver.findElement(cansel_button).click();
-
-    }
-    public void Clicking_finish_button (By finish) {
-        driver.findElement(finish_button).click();
-
-    }
-    public void Clicking_logout_button (By logout_a) {
+     public void Clicking_logout_button (By logout_a) {
         driver.findElement(logout).click();
 
     }
@@ -63,9 +71,4 @@ public class Overview {
         driver.findElement(X_icon).click();
 
     }
-
-
-
-
-
-}
+*/

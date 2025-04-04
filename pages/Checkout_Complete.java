@@ -10,7 +10,15 @@ public class Checkout_Complete {
     }
     By Checkout_Complete = By.id("back-to-products");
     By chart_icon = By.className("shopping_cart_link");
-    By Burger_menu = By.id("react-burger-menu-btn");
+
+
+    public void Clicking_Back_Home_button () {
+        driver.findElement(Checkout_Complete).click();
+
+    }
+
+}
+/*   By Burger_menu = By.id("react-burger-menu-btn");
     By All_items =By.id("inventory_sidebar_link");
     By About = By.id("about_sidebar_link");
     By logout =By.id("logout_sidebar_link");
@@ -19,12 +27,7 @@ public class Checkout_Complete {
     By Linkedin_icon = By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[3]/a");
     By Facbook_icon = By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[2]/a");
     By X_icon =By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[1]/a");
-
-    public void Clicking_Back_Home_button () {
-        driver.findElement(Checkout_Complete).click();
-
-    }
-    public void Clicking_Linkedin_icon (By Linkedin) {
+      public void Clicking_Linkedin_icon (By Linkedin) {
         driver.findElement(Linkedin_icon).click();
 
     }
@@ -61,4 +64,6 @@ public class Checkout_Complete {
         driver.findElement(Reset_App_State).click();
 
     }
-}
+
+
+    */

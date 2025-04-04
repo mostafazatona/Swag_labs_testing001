@@ -47,6 +47,23 @@ public class Add_prouduct extends Base_test {
 
 
     }
+    @Test
+    public void Addtocart_SLB(){
+        testlogin = new login(base_driver);
+        Wait<WebDriver> wait = new WebDriverWait(base_driver, Duration.ofSeconds(5));
+        test_product1 =new Products(base_driver);
+        cart = new Cart(base_driver);
+
+        testlogin.setusername("standard_user");  // يجب تصحيح "standard_user"
+        testlogin.setpassword("secret_sauce");
+
+        // انتظار زر الlogin ليكون قابلاً للنقر ثم النقر عليه
+        WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("login-button")));
+        testlogin.clickonlogin();
+
+
+
+    }
 
 
 

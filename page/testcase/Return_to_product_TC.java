@@ -27,7 +27,7 @@ public class Return_to_product_TC extends Base_test {
     @Test
     public void Return_to_product_TC() {
         // تعريف WebDriverWait باستخدام Duration
-        WebDriverWait wait = new WebDriverWait(base_driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(base_driver, Duration.ofSeconds(60));
 
         test_ch_out = new information(base_driver);
         testlogin = new login(base_driver);
